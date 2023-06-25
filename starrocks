@@ -1,0 +1,5 @@
+mysql.host=doris
+mysql.port=9030
+mysql.user=root
+mysql.password=
+mysql.db=hzw

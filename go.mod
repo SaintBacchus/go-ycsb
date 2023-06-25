@@ -19,7 +19,7 @@ require (
 	github.com/fortytw2/leaktest v1.3.0 // indirect
 	github.com/go-ini/ini v1.49.0 // indirect
 	github.com/go-redis/redis/v9 v9.0.0-rc.1
-	github.com/go-sql-driver/mysql v1.6.0
+	github.com/go-sql-driver/mysql v1.7.1
 	github.com/gocql/gocql v0.0.0-20181124151448-70385f88b28b
 	github.com/lib/pq v1.1.1
 	github.com/magiconair/properties v1.8.0

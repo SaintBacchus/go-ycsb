@@ -92,9 +92,9 @@ func (c starRocksCreator) Create(p *properties.Properties) (ycsb.DB, error) {
 	if err != nil {
 		return nil, err
 	}
-	//threadCount := int(p.GetInt64(prop.ThreadCount, prop.ThreadCountDefault))
-	db.SetMaxIdleConns(100)
-	db.SetMaxOpenConns(100)
+	threadCount := int(p.GetInt64(prop.ThreadCount, prop.ThreadCountDefault))
+	db.SetMaxIdleConns(threadCount + 1)
+	db.SetMaxOpenConns(threadCount + 1)
 
 	d.verbose = p.GetBool(prop.Verbose, prop.VerboseDefault)
 	d.db = db
